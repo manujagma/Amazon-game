@@ -301,8 +301,8 @@ def run_classic_mode(screen, clock):
                 if enemy[1] > SCREEN_HEIGHT:
                     enemies.remove(enemy)
             
-            # Check if big mother ship should appear (score >= 150)
-            if score >= 150 and big_mother_ship is None:
+            # Check if big mother ship should appear (score >= 500)
+            if score >= 500 and big_mother_ship is None:
                 big_mother_ship = [SCREEN_WIDTH // 2 - BIG_MOTHER_SHIP_SIZE // 2, 50]
                 # Remove other ships when big mother ship appears
                 mother_ship = None
@@ -313,12 +313,12 @@ def run_classic_mode(screen, clock):
             
             # Only check for other ships if big mother ship is not present
             if big_mother_ship is None:
-                # Check if mother ship should appear (score >= 50)
-                if score >= 50 and mother_ship is None:
+                # Check if mother ship should appear (score >= 150)
+                if score >= 150 and mother_ship is None:
                     mother_ship = [SCREEN_WIDTH // 2 - MOTHER_SHIP_SIZE // 2, 50]
                 
-                # Check if advanced ship should appear (score >= 100)
-                if score >= 100 and advanced_ship is None:
+                # Check if advanced ship should appear (score >= 300)
+                if score >= 300 and advanced_ship is None:
                     advanced_ship = [SCREEN_WIDTH // 2 - ADVANCED_SHIP_SIZE // 2, 100]
             
             # Mother ship movement and shooting

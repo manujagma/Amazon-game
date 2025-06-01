@@ -33,9 +33,9 @@ python main.py
 
 ### Classic Mode
 - Regular enemies appear from the top
-- Mother ship appears at score 50 (fires single bullets)
-- Advanced ship appears at score 100 (fires triple bullets)
-- Big mother ship appears at score 150 (fires splitting bullets)
+- Mother ship appears at score 150 (fires single bullets)
+- Advanced ship appears at score 300 (fires triple bullets)
+- Big mother ship appears at score 500 (fires splitting bullets)
 - Win by destroying the big mother ship
 
 ### Unlimited Mode
